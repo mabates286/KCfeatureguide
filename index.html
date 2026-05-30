@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kitchen Commander — Feature Guide </title>
+<title>Kitchen Commander — Feature Overview</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -298,7 +298,7 @@ body{background:var(--cream);color:var(--dark);font-family:var(--font-body);font
 <nav class="top-nav">
   <div>
     <div class="nav-logo">Kitchen <span>Commander</span></div>
-    <div class="nav-tag">Feature Overview </div>
+    <div class="nav-tag">Feature Overview · Pre-Seed · May 2026</div>
   </div>
   <div class="nav-links">
     <a href="#intelligence">Intelligence</a>
@@ -317,6 +317,7 @@ body{background:var(--cream);color:var(--dark);font-family:var(--font-body);font
   <h1>Kitchen Commander<br><em>Feature Overview</em></h1>
   <p class="hero-sub">A curated guide to the 30 features that define Kitchen Commander's product thesis — organized by what they do, why they matter, and where they connect to the IoT infrastructure layer.</p>
   <div class="hero-note">
+    This document is a curated guide to the 30 features that define Kitchen Commander's product thesis. Each feature is annotated with its IoT integration potential and contribution to the platform's defensibility. The full feature registry (200+ features across the base app and 7 companion apps) is available on request.
   </div>
 </section>
 
@@ -382,7 +383,7 @@ body{background:var(--cream);color:var(--dark);font-family:var(--font-body);font
         <div class="fcard-name">Vision AI — Fridge & Pantry Scanner</div>
         <div class="fcard-desc">User photographs their fridge or pantry. A custom YOLOv8 model trained on 50,000 labeled kitchen images identifies every item, estimates quantity, and updates the Stock Ledger automatically. Zero typing. Zero manual entry. Ever.</div>
         <div class="fcard-example">"Scanned 24 items in 8 seconds. Milk: 18% (critical). Broccoli: in stock. 3 low-stock alerts added to grocery list automatically."</div>
-        <div class="iot-block"><strong>IoT Integration Potential</strong>Smart fridge cameras (Samsung Family Hub, LG ThinQ) can replace the scan entirely — continuous passive inventory tracking with no user action required. This is the connected device layer Bsquare's embedded OS work was building toward.</div>
+        <div class="iot-block"><strong>IoT Integration Potential</strong>Smart fridge cameras (Samsung Family Hub, LG ThinQ) can replace the scan entirely — continuous passive inventory tracking with no user action required. This is the connected device layer the platform is architected to support.</div>
         <div class="unicorn-block"><strong>Unicorn Contribution</strong>Proprietary Vision AI trained on kitchen-specific data is a moat that takes 18-24 months and $5M+ to replicate. It's also the foundation for the Allergen Safety Scanner and Pantry Score features.</div>
       </div>
       <div class="fcard-bottom">
@@ -551,7 +552,7 @@ body{background:var(--cream);color:var(--dark);font-family:var(--font-body);font
         <div class="fcard-name">Stock Ledger</div>
         <div class="fcard-desc">Intelligent, self-updating household inventory. Auto-categorizes items (Produce, Protein, Dairy, Pantry), tracks expiration dates via Vision AI, sends alerts before items expire, and builds usage pattern models per household. The single source of truth for everything in the kitchen.</div>
         <div class="fcard-example">"Milk: 18% (CRITICAL, 2 days) · Broccoli: 45% (use before Thursday) · Pasta: 85% (fine) · Grapes: bought Sunday — still good?"</div>
-        <div class="iot-block"><strong>IoT Integration Potential</strong>Smart scales on shelves or in the fridge can track weight-based consumption in real time with zero user action. This is the passive inventory layer that Bsquare's device management experience maps directly to.</div>
+        <div class="iot-block"><strong>IoT Integration Potential</strong>Smart scales on shelves or in the fridge can track weight-based consumption in real time with zero user action — the passive inventory layer the platform architecture is designed to absorb.</div>
         <div class="unicorn-block"><strong>Unicorn Contribution</strong>3.65M data points per year across 10,000 users. Consumption rates, waste patterns, seasonal behavior — this dataset is licensable to CPG brands at $200-400K/year per brand.</div>
       </div>
       <div class="fcard-bottom">
@@ -619,7 +620,7 @@ body{background:var(--cream);color:var(--dark);font-family:var(--font-body);font
     <div class="cluster-icon">❤️</div>
     <div>
       <div class="cluster-title">Health Intelligence Layer</div>
-      <div class="cluster-sub">Multi-layer health profiles, Pantry Score, allergen safety, and Nutritionist Connect</div>
+      <div class="cluster-sub">Multi-layer health profiles, Pantry Score, allergen safety, Nutritionist Connect, and Pro Planner Dashboard</div>
     </div>
   </div>
 
@@ -684,6 +685,22 @@ body{background:var(--cream);color:var(--dark);font-family:var(--font-body);font
         <span class="badge badge-iot">IoT Potential</span>
         <span class="badge badge-unicorn">$72M Revenue</span>
         <span class="badge badge-data">HIPAA Required</span>
+      </div>
+    </div>
+
+    <div class="fcard">
+      <div class="fcard-top">
+        <div class="fcard-name">Pro Planner Dashboard <span style="font-size:11px;color:var(--terra);">(B2B)</span></div>
+        <div class="fcard-desc">A standalone web dashboard for credentialed RDs and certified personal trainers — separate product, separate login, SaaS subscription pricing ($39–79/month per practitioner). Professionals manage a full client roster from one command center: view each client's goals, health profile, Pantry Score, Crash Out frequency, macro trends, and actual vs. planned meal compliance. They push weekly meal plans and curated recipe sets directly into the client's Kitchen Commander app, where plans flow automatically into The Blitz sequencing. Practitioners build private recipe libraries organized by goal type (fat loss, muscle gain, allergen-safe, high-energy) and push to individual clients or entire client segments in one action. The compliance gap view — what was planned vs. what was actually eaten — is data no current wellness platform can offer.</div>
+        <div class="fcard-example">"Client roster: 14 active. Sarah M. — Pantry Score dropped to 54 this week, 3 Crash Outs (Tue/Thu pattern). Pushing: 3 high-protein, low-prep dinners for her Thursday evening slot. Compliance last week: 5 of 7 planned meals executed."</div>
+        <div class="iot-block"><strong>IoT Integration Potential</strong>Wearable data (HRV, sleep, activity from Apple Watch or Oura) surfaced in the practitioner view gives RDs and trainers real physiological context alongside food data — the most complete client picture any wellness professional has ever had access to.</div>
+        <div class="unicorn-block"><strong>Unicorn Contribution</strong>Dual revenue stream from a single client relationship: the user pays for Kitchen Commander (consumer), the practitioner pays for Pro Planner (B2B). B2B SaaS compounds differently than consumer subscription — lower churn, higher LTV, natural expansion as practitioners grow their client lists. Gym chains, corporate wellness programs, and RD private practices are all reachable via direct B2B sales. Year 1 target: 500 practitioners × $59/month = $354K ARR before a single enterprise deal closes.</div>
+      </div>
+      <div class="fcard-bottom">
+        <span class="badge badge-health">Health</span>
+        <span class="badge badge-unicorn">B2B SaaS</span>
+        <span class="badge badge-data">Dual Revenue</span>
+        <span class="badge badge-mvp">Year 2</span>
       </div>
     </div>
 
@@ -822,7 +839,7 @@ body{background:var(--cream);color:var(--dark);font-family:var(--font-body);font
 <span class="anchor" id="iot-roadmap"></span>
 <div class="iot-roadmap">
   <h2>The <em>IoT Roadmap</em></h2>
-  <p class="rm-sub">Kitchen Commander is building a software layer designed to connect to hardware. </p>
+  <p class="rm-sub">Kitchen Commander is built on a software layer that was always designed to connect to hardware. Every feature is architected with device hooks — the platform's ceiling scales with the smart home market.</p>
 
   <div class="rm-grid">
 
@@ -837,7 +854,6 @@ body{background:var(--cream);color:var(--dark);font-family:var(--font-body);font
         <li>OpenTable & Resy for dining detection (Year 2)</li>
         <li>Nutritionix restaurant nutrition data (Year 1)</li>
       </ul>
-      <div class="rm-bsquare-note"><strong>Bsquare Parallel:</strong> This is the embedded OS layer — establishing the protocols before the devices arrive. The same architectural discipline that made Bsquare's Windows CE work portable across device types applies here.</div>
     </div>
 
     <div class="rm-card">
@@ -851,7 +867,6 @@ body{background:var(--cream);color:var(--dark);font-family:var(--font-body);font
         <li>Vitamix Connect → Pulp Mandate prep steps</li>
         <li>Amazon Dash Cart → allergen scanning at retail</li>
       </ul>
-      <div class="rm-bsquare-note"><strong>Bsquare Parallel:</strong> SquareOne for remote device fleet management — Kitchen Commander is building the same concept for consumer appliances. Device management, OTA updates, behavioral telemetry. Same architecture, different end market.</div>
     </div>
 
     <div class="rm-card">
@@ -864,7 +879,6 @@ body{background:var(--cream);color:var(--dark);font-family:var(--font-body);font
         <li>KC Smart Label System — NFC expiration tracking</li>
         <li>OEM partnership: KC-certified fridge models</li>
       </ul>
-      <div class="rm-bsquare-note"><strong>Bsquare Parallel:</strong> This is the OEM partnership model — Bsquare licensed embedded OS to device makers; Kitchen Commander licenses software to appliance manufacturers and eventually builds proprietary devices. The go-to-market playbook exists.</div>
     </div>
 
     <div class="rm-card">
@@ -878,7 +892,6 @@ body{background:var(--cream);color:var(--dark);font-family:var(--font-body);font
         <li>White-label OS for smart home builders</li>
         <li>Fleet management API for corporate wellness</li>
       </ul>
-      <div class="rm-bsquare-note"><strong>Bsquare Parallel:</strong> This is exactly what Bsquare was building toward with SquareOne and the Itron industrial IoT partnership — a device-agnostic management platform. Kitchen Commander is the consumer version of that thesis, 30 years later, with AI.</div>
     </div>
 
   </div>
@@ -887,6 +900,9 @@ body{background:var(--cream);color:var(--dark);font-family:var(--font-body);font
 <!-- CLOSING -->
 <div class="closing">
   <h2>Built for the <em>moment IoT becomes personal.</em></h2>
+  <p>The smart home market has produced extraordinary hardware — connected fridges, smart ovens, wearables — but no software layer that ties it to human behavior. Kitchen Commander is that layer.</p>
+  <p>The hardware partnerships, the fleet management architecture, the OEM licensing model, the device telemetry as proprietary data — these aren't aspirational features. They're the natural next chapter of a platform built from day one to connect.</p>
+  <p style="font-weight:600;color:var(--dark);">The prototype is live. The data architecture is in place. The question is how fast we scale it.</p>
   <div class="closing-links">
     <a href="https://kitchencommander-qiijvnv66-mabates286-3544s-projects.vercel.app" class="clink clink-primary" target="_blank">View the Prototype →</a>
     <a href="#intelligence" class="clink clink-secondary">Back to Top</a>
